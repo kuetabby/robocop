@@ -2,9 +2,11 @@
   "name": "robocop",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kuetabby.github.io/Robocop",
   "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-redux": "^6.0.0",
     "react-scripts": "1.1.4",
     "redux": "^4.0.1",
@@ -13,9 +15,12 @@
     "tachyons": "^4.10.0"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "devDependencies": {}
 }
